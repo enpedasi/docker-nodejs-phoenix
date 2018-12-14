@@ -9,7 +9,9 @@ RUN echo http://dl-cdn.alpinelinux.org/alpine/edge/main/ >> /etc/apk/repositorie
   mix local.rebar --force && \
   mix local.hex --force && \
   mix hex.info && \
-  mix archive.install --force hex phx_new 1.4.0
+  mix archive.install --force hex phx_new 1.4.0 && \
+  wget https://github.com/bryanstearns/mix_deps_add/releases/download/0.1.3/mix_deps_add-0.1.3.ez && \
+  mix archive.install mix_deps_add-0.1.3.ez --force
 
 EXPOSE 4000
 
