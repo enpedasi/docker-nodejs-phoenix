@@ -1,4 +1,4 @@
-FROM elixir:1.9.4-alpine
+FROM elixir:1.10.2-alpine
 ENV LANG C.UTF-8
 
 RUN apk --update --no-cache add ncurses-libs git wget ca-certificates openssl curl make gcc g++ python && \
@@ -10,7 +10,7 @@ RUN apk --update --no-cache add ncurses-libs git wget ca-certificates openssl cu
   mix local.rebar --force && \
   mix local.hex --force && \
   mix hex.info && \
-  mix archive.install --force hex phx_new 1.4.13 && \
+  mix archive.install --force hex phx_new 1.5.1 && \
   wget https://github.com/bryanstearns/mix_deps_add/releases/download/0.1.3/mix_deps_add-0.1.3.ez && \
   mix archive.install mix_deps_add-0.1.3.ez --force
 

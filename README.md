@@ -1,5 +1,5 @@
 # docker-nodejs-phoenix
-This Dockerfile enables you to elixir 1.9.4 , phoenix 1.4.13 and node.js LTS(use Alpinelinux edge/main).
+This Dockerfile enables you to elixir 1.10.2 , phoenix 1.5.1 and node.js LTS(use Alpinelinux edge/main).
 
 # Usage
 
